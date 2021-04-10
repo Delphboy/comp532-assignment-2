@@ -1,6 +1,12 @@
 import gym
+import torch
+import matplotlib.pyplot as plt
+import numpy as np
 
-env = gym.make('CartPole-v0')
+# Hyper Params
+
+# Initalise Envirnoment
+env = gym.make('Breakout-v0')
 for i_episode in range(20):
     observation = env.reset()
     for t in range(100):
